@@ -1,3 +1,6 @@
+![image](https://github.com/parkournick3/trilingo/assets/131922314/06b85d54-10f7-47af-9384-239eb3c8802f)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
