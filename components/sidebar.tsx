@@ -67,6 +67,7 @@ export default function Sidebar({ className }: Props) {
             appearance={{
               elements: { userButtonPopoverCard: { pointerEvents: "initial" } },
             }}
+            afterSignOutUrl="/"
           />
         </ClerkLoaded>
       </div>
