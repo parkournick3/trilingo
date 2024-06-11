@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    reactCompiler: true,
+  },
+  reactStrictMode: true,
   images: {
     dangerouslyAllowSVG: true, // remove it
     remotePatterns: [
