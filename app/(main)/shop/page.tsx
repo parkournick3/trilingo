@@ -1,3 +1,3 @@
-export default function LearnPage() {
+export default function ShopPage() {
   return <div>shop</div>;
 }
