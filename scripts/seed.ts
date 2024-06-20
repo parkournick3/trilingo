@@ -54,20 +54,33 @@ const main = async () => {
         description: "Learn the basics of Brazilian Portuguese",
         order: 1,
       },
+      {
+        id: 2,
+        courseId: 4, // Brazilian Portuguese
+        title: "Unit 2",
+        description: "Intermediate Brazilian Portuguese",
+        order: 2,
+      },
     ]);
 
     await db.insert(schema.lessons).values([
       {
         id: 1,
-        unitId: 1, // Unit 1 ( Learn the basics... )
+        unitId: 1, // Unit 1 (Learn the basics of Brazilian Portuguese)
         order: 1,
         title: "Nouns",
       },
       {
         id: 2,
-        unitId: 1, // Unit 1 ( Learn the basics... )
+        unitId: 1, // Unit 1 (Learn the basics of Brazilian Portuguese)
         order: 2,
         title: "Verbs",
+      },
+      {
+        id: 3,
+        unitId: 2, // Unit 2 (Intermediate Brazilian Portuguese)
+        order: 1,
+        title: "Adjectives",
       },
     ]);
 
@@ -78,6 +91,20 @@ const main = async () => {
         type: "SELECT",
         order: 1,
         question: 'Which one of these is the "man"',
+      },
+      {
+        id: 2,
+        lessonId: 2, // Verbs
+        type: "SELECT",
+        order: 1,
+        question: 'Which one of these is the "to run"',
+      },
+      {
+        id: 3,
+        lessonId: 3, // Adjectives
+        type: "SELECT",
+        order: 1,
+        question: 'Which one of these is the "beautiful"',
       },
     ]);
 
@@ -94,9 +121,41 @@ const main = async () => {
         id: 2,
         challengeId: 1, // Which one of these is the "man"
         imageSrc: "/woman.svg",
-        correct: true,
+        correct: false,
         text: "Mulher",
         audioSrc: "/mulher.mp3",
+      },
+      {
+        id: 3,
+        challengeId: 2, // Which one of these is the "to run"
+        imageSrc: "/run.svg",
+        correct: true,
+        text: "Correr",
+        audioSrc: "/correr.mp3",
+      },
+      {
+        id: 4,
+        challengeId: 2, // Which one of these is the "to run"
+        imageSrc: "/walk.svg",
+        correct: false,
+        text: "Andar",
+        audioSrc: "/andar.mp3",
+      },
+      {
+        id: 5,
+        challengeId: 3, // Which one of these is the "beautiful"
+        imageSrc: "/beautiful.svg",
+        correct: true,
+        text: "Bonito",
+        audioSrc: "/bonito.mp3",
+      },
+      {
+        id: 6,
+        challengeId: 3, // Which one of these is the "beautiful"
+        imageSrc: "/ugly.svg",
+        correct: false,
+        text: "Feio",
+        audioSrc: "/feio.mp3",
       },
     ]);
 
