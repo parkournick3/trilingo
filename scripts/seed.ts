@@ -90,21 +90,21 @@ const main = async () => {
         lessonId: 1, // Nouns
         type: "SELECT",
         order: 1,
-        question: 'Which one of these is the "man"',
+        question: 'Which one of these is the "homem"',
       },
       {
         id: 2,
         lessonId: 2, // Verbs
         type: "SELECT",
         order: 1,
-        question: 'Which one of these is the "to run"',
+        question: 'Which one of these is the "correr"',
       },
       {
         id: 3,
         lessonId: 3, // Adjectives
         type: "SELECT",
         order: 1,
-        question: 'Which one of these is the "beautiful"',
+        question: 'Which one of these is the "bonito"',
       },
     ]);
 
