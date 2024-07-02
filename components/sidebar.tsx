@@ -19,12 +19,7 @@ export default function Sidebar({ className }: Props) {
     >
       <Link href="/learn">
         <div className="pt-8 pl-4 pb-7 flex items-center gap-x-3">
-          <Image
-            src="https://placehold.co/40x40"
-            height={40}
-            width={40}
-            alt="Mascot"
-          />
+          <Image src="/mascot.svg" height={40} width={40} alt="Mascot" />
           <h1 className="text-2xl font-extrabold tracking-wide text-green-600">
             Trilingo
           </h1>
@@ -32,29 +27,17 @@ export default function Sidebar({ className }: Props) {
       </Link>
 
       <div className="flex flex-col gap-y-2 flex-1">
-        <SidebarItem
-          href="/learn"
-          label="Learn"
-          iconSrc="https://placehold.co/32x32"
-        />
+        <SidebarItem href="/learn" label="Learn" iconSrc="/house.svg" />
 
         <SidebarItem
           href="/leaderboard"
           label="Leaderboard"
-          iconSrc="https://placehold.co/32x32"
+          iconSrc="/star.svg"
         />
 
-        <SidebarItem
-          href="/quests"
-          label="Quests"
-          iconSrc="https://placehold.co/32x32"
-        />
+        <SidebarItem href="/quests" label="Quests" iconSrc="/mission.svg" />
 
-        <SidebarItem
-          href="/shop"
-          label="Shop"
-          iconSrc="https://placehold.co/32x32"
-        />
+        <SidebarItem href="/shop" label="Shop" iconSrc="/shop.svg" />
       </div>
 
       <div className="p-4">

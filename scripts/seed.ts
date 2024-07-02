@@ -24,21 +24,21 @@ const main = async () => {
     await db.delete(schema.challengeProgress);
 
     await db.insert(schema.courses).values([
-      {
-        id: 1,
-        title: "Japanese",
-        imageSrc: "/jp.svg",
-      },
-      {
-        id: 2,
-        title: "Spanish",
-        imageSrc: "/es.svg",
-      },
-      {
-        id: 3,
-        title: "English",
-        imageSrc: "/us.svg",
-      },
+      // {
+      //   id: 1,
+      //   title: "Japanese",
+      //   imageSrc: "/jp.svg",
+      // },
+      // {
+      //   id: 2,
+      //   title: "Spanish",
+      //   imageSrc: "/es.svg",
+      // },
+      // {
+      //   id: 3,
+      //   title: "English",
+      //   imageSrc: "/us.svg",
+      // },
       {
         id: 4,
         title: "Brazilian Portuguese",

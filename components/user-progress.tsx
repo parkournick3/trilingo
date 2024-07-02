@@ -33,10 +33,10 @@ export default function UserProgress({
       <Link href="/shop">
         <Button variant="ghost" className="text-orange-500">
           <Image
-            src="https://placehold.co/32x32"
+            src="/energy.svg"
             alt="Points"
-            height={28}
-            width={28}
+            height={32}
+            width={32}
             className="mr-2"
           />
           {points}
@@ -45,10 +45,10 @@ export default function UserProgress({
       <Link href="/shop">
         <Button variant="ghost" className="text-rose-500">
           <Image
-            src="https://placehold.co/22x22"
+            src="/heart.svg"
             alt="Hearts"
-            height={22}
-            width={22}
+            height={32}
+            width={32}
             className="mr-2"
           />
           {hasActiveSubscription ? (
