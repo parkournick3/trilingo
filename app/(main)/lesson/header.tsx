@@ -27,10 +27,10 @@ export default function Header({
       <Progress value={percentage} />
       <div className="text-rose-500 flex items-center font-bold">
         <Image
-          src="https://placehold.co/28x28"
+          src="/heart.svg"
           alt="Hearts"
-          height={28}
-          width={28}
+          height={32}
+          width={32}
           className="mr-2"
         />
         {hasActiveSubscription ? (

@@ -15,6 +15,7 @@ const main = async () => {
   try {
     console.log("Seeding the database");
 
+    console.log("Deleting tables");
     await db.delete(schema.courses);
     await db.delete(schema.userProgress);
     await db.delete(schema.units);
@@ -23,6 +24,7 @@ const main = async () => {
     await db.delete(schema.challengeOptions);
     await db.delete(schema.challengeProgress);
 
+    console.log("Inserting mock");
     await db.insert(schema.courses).values([
       // {
       //   id: 1,
@@ -90,21 +92,21 @@ const main = async () => {
         lessonId: 1, // Nouns
         type: "SELECT",
         order: 1,
-        question: 'Which one of these is the "homem"',
+        question: 'Which one of these is the "man"',
       },
       {
         id: 2,
         lessonId: 2, // Verbs
         type: "SELECT",
         order: 1,
-        question: 'Which one of these is the "correr"',
+        question: 'Which one of these is the "to run"',
       },
       {
         id: 3,
         lessonId: 3, // Adjectives
         type: "SELECT",
         order: 1,
-        question: 'Which one of these is the "bonito"',
+        question: 'Which one of these is the "beautiful"',
       },
     ]);
 
@@ -115,7 +117,7 @@ const main = async () => {
         imageSrc: "/man.svg",
         correct: true,
         text: "Homem",
-        audioSrc: "/homem.mp3",
+        audioSrc: "/br_man.mp3",
       },
       {
         id: 2,
@@ -123,7 +125,7 @@ const main = async () => {
         imageSrc: "/woman.svg",
         correct: false,
         text: "Mulher",
-        audioSrc: "/mulher.mp3",
+        audioSrc: "/br_woman.mp3",
       },
       {
         id: 3,
@@ -131,7 +133,7 @@ const main = async () => {
         imageSrc: "/run.svg",
         correct: true,
         text: "Correr",
-        audioSrc: "/correr.mp3",
+        audioSrc: "/br_to_run.mp3",
       },
       {
         id: 4,
@@ -139,7 +141,7 @@ const main = async () => {
         imageSrc: "/walk.svg",
         correct: false,
         text: "Andar",
-        audioSrc: "/andar.mp3",
+        audioSrc: "/br_to_walk.mp3",
       },
       {
         id: 5,
@@ -147,15 +149,15 @@ const main = async () => {
         imageSrc: "/beautiful.svg",
         correct: true,
         text: "Bonito",
-        audioSrc: "/bonito.mp3",
+        audioSrc: "/br_beautiful.mp3",
       },
       {
         id: 6,
         challengeId: 3, // Which one of these is the "beautiful"
         imageSrc: "/ugly.svg",
         correct: false,
-        text: "Feio",
-        audioSrc: "/feio.mp3",
+        text: "Alto",
+        audioSrc: "/br_high.mp3",
       },
     ]);
 
