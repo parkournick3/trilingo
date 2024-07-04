@@ -96,13 +96,20 @@ const main = async () => {
       },
       {
         id: 2,
+        lessonId: 1, // Nouns
+        type: "ASSIST",
+        order: 2,
+        question: '"man"',
+      },
+      {
+        id: 3,
         lessonId: 2, // Verbs
         type: "SELECT",
         order: 1,
         question: 'Which one of these is the "to run"',
       },
       {
-        id: 3,
+        id: 4,
         lessonId: 3, // Adjectives
         type: "SELECT",
         order: 1,
@@ -129,31 +136,45 @@ const main = async () => {
       },
       {
         id: 3,
-        challengeId: 2, // Which one of these is the "to run"
+        challengeId: 2, // "man"
+        correct: true,
+        text: "Homem",
+        audioSrc: "/br_man.mp3",
+      },
+      {
+        id: 4,
+        challengeId: 2, // "man"
+        correct: false,
+        text: "Mulher",
+        audioSrc: "/br_woman.mp3",
+      },
+      {
+        id: 5,
+        challengeId: 3, // Which one of these is the "to run"
         imageSrc: "/run.svg",
         correct: true,
         text: "Correr",
         audioSrc: "/br_to_run.mp3",
       },
       {
-        id: 4,
-        challengeId: 2, // Which one of these is the "to run"
+        id: 6,
+        challengeId: 3, // Which one of these is the "to run"
         imageSrc: "/walk.svg",
         correct: false,
         text: "Andar",
         audioSrc: "/br_to_walk.mp3",
       },
       {
-        id: 5,
-        challengeId: 3, // Which one of these is the "beautiful"
+        id: 7,
+        challengeId: 4, // Which one of these is the "beautiful"
         imageSrc: "/beautiful.svg",
         correct: true,
         text: "Bonito",
         audioSrc: "/br_beautiful.mp3",
       },
       {
-        id: 6,
-        challengeId: 3, // Which one of these is the "beautiful"
+        id: 8,
+        challengeId: 4, // Which one of these is the "beautiful"
         imageSrc: "/ugly.svg",
         correct: false,
         text: "Alto",
